@@ -1,0 +1,112 @@
+.testimonials{
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+.next-btn, .back-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    background: #219aa0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.back-btn{
+    right: auto;
+    left: 0;
+}
+.slider{
+    overflow: hidden;
+}
+.slider ul {
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+   
+}
+.slider ul li{
+    list-style: none;
+    width: 50%;
+    padding: 20px;
+
+}
+.slide{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.slide img{
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid #219aa0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.user-info h3{
+    color: #219aa0;
+}
+
+/*--------Media Query---------*/
+ @media (max-width: 800px){
+    .testimonials{
+        padding: 0 40px;
+    }
+    .next-btn, .back-btn {
+        padding: 10px;
+        width: 35px;
+    }
+    .testimonials ul li{
+        padding: 10px;
+    }
+    .slide{
+        padding: 10px;
+    }
+    .slide img{
+        width: 50px;
+        border: 3px solid #219aa0;
+    }
+ }
+
+ @media (max-width: 600px){
+    .user-info{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .user-info h3{
+        font-size: 16px;
+    }
+    .slider p{
+        font-size: 12px;
+    }
+ }
